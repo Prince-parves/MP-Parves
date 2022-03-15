@@ -1,0 +1,171 @@
+
+    
+    
+    /*		Default Layout: 992px. 
+            Gutters: 24px.
+            Outer margins: 48px.
+            Leftover space for scrollbars @1024px: 32px.
+    -------------------------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8      9      10
+    px      68    160    252    344    436    528    620    712    804    896    */
+    
+
+    
+    
+    /*		Tablet Layout: 768px.
+            Gutters: 24px.
+            Outer margins: 28px.
+            Inherits styles from: Default Layout.
+    -----------------------------------------------------------------
+    cols    1     2      3      4      5      6      7      8
+    px      68    160    252    344    436    528    620    712    */
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .main{
+            width:80%;
+            height: 80%;
+        }
+        .header-bg{
+            height: 100px;
+            width: 100%;
+            background: #0a0a0e;
+            color: #b4adc2;
+            padding: 0 8.5%;
+            position: relative;
+            border-top:1px solid #554f4f;
+            border-bottom:1px solid #312626;
+            font-family: 'Barlow', sans-serif;
+            z-index: 10;
+            position: fixed;
+            
+        }
+        #por {
+            width: 100%;
+           padding-right: 2%;
+            height: 100%;
+            background-color: #eeafaf;
+          }
+          .portfolio {
+            width: 100%;
+            height: 428%;
+            display: inline-block;
+            background-color: #cec0c0;
+          }
+    }
+    
+    
+    
+    /*		Mobile Layout: 320px.
+            Gutters: 24px.
+            Outer margins: 34px.
+            Inherits styles from: Default Layout.
+    ---------------------------------------------
+    cols    1     2      3
+    px      68    160    252    */
+    
+    @media only screen and  (max-width: 767px){
+        .portfolio{
+            width: 100%;
+            height: 100%;
+            background-color: #ebd9d9;
+        }
+        .header-bg {
+            height: 20%;
+            width: 225%;
+            margin-top: -15%;
+            padding: 50%;
+            margin-left: -97%;
+            float: left;
+            background: #0a0a0e;
+            color: #b4adc2;
+            padding: 0 8.5%;
+            position: relative;
+            border-top: 1px solid #554f4f;
+            border-bottom: 1px solid #312626;
+            font-family: 'Barlow', sans-serif;
+            z-index: 10;
+            position: fixed;
+        }
+        nav ul li a {
+            display: block;
+            color: #dedede;
+            text-decoration: none;
+            letter-spacing: -1px;
+            font-size: 17px;
+        }
+        .portfolio{
+            width: 100%;
+            height: 1500px;
+            padding-left: 1%;
+            display: inline-block;
+            background-color: #cec0c0;
+        }
+        .text-box {
+            width: 101%;
+            height: 100%;
+            background: #121218;
+            font-size: 17px;
+            font-family: 'Slabo 27px', serif;
+            padding-left: 155PX;
+            padding-top: -14px;
+            /* margin-top: 23%; */
+        }
+        
+        
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            /* padding-left: 15%; */
+            margin-left: 10%;
+        }
+        .pl{
+            padding: 30px;
+            font-weight: 600;
+        }
+        .card2{
+            margin-left: 132px;
+            margin-top: -649px;
+           
+        }
+        .header1 img {
+            color: aliceblue;
+            margin-right: 146%;
+            padding-left: 100px;
+        }
+        
+        
+    }
+    
+    
+    
+    /*		Wide Mobile Layout: 480px.
+            Gutters: 24px.
+            Outer margins: 22px.
+            Inherits styles from: Default Layout, Mobile Layout.
+    ------------------------------------------------------------
+    cols    1     2      3      4      5
+    px      68    160    252    344    436    */
+    
+    @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+        
+        .main{
+            width: 100%;
+            height: 100vh;;
+        }
+    
+    }
+    
+    
+    /*	Retina media query.
+        Overrides styles for devices with a 
+        device-pixel-ratio of 2+, such as iPhone 4.
+    -----------------------------------------------    */
+    
+    @media 
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min-device-pixel-ratio: 2) {
+        
+        body {
+        
+        }
+        
